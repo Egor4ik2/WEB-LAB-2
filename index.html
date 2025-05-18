@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1 class="logo-name">Каталог книжок та ігор</h1>
+  
+    <nav class="nav">
+        <a href="/index.html" class="a-nav">Головна</a>
+        <a href="news.html" class="a-nav">Новини</a>
+        <a href="" class="a-nav">test</a>
+    </nav>
+      <div id="filter-panel">
+      <select id="categoryFilter">
+        <option value="all">Усі</option>
+        <option value="books">Книги</option>
+        <option value="games">Ігри</option>
+      </select>
+    </div>
+  </header>
+
+   <main>
+    <div id="card-container"></div>
+    <div class="button-load">
+    <button id="loadMoreBtn">Завантажити більше</button>
+    </div>
+  </main>
+
+<footer class="footer">
+  <div class="footer-container">
+    <div class="footer-about">
+      <h3>Футер</h3>
+      <p>Текст футера</p>
+    </div>
+  </div>
+</footer>
+
+<div id="promo-banner" class="promo-banner hidden">
+  <p><strong>Отримайте знижку!</strong> Пропозиція зникне через <span id="promo-timer">10</span> секунд!</p>
+  <button id="closePromoBtn">Закрити</button>
+</div>
+
+
+<div id="adModal" class="modal hidden">
+  <div class="modal-content">
+    <img src="" alt="special deal">
+    <p>Спеціальна пропозиція!</p>
+    <button id="closeAdBtn" disabled>Закрити (<span id="timer">5</span>)</button>
+  </div>
+</div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
